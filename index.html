@@ -12,6 +12,12 @@
                 <div class="name">{{person.name}} - {{person.phone}}</div>
                 <span class="city">{{person.city}}</span>
             </div>
+        </div>
+        <center><button type="button" ng-click="ShowForm()" ng-hide="formVisibility">Add Contact</button></center>
+        <br/>
+        <br/>
+        <br/>
+        <div ng-show="formVisibility" class="wrapper">
             <h2>Add Contact</h2>
             Name: <input type="text" ng-model="newPerson.name"></input> <br>
             Phone: <input type="text" ng-model="newPerson.phone"></input> <br>

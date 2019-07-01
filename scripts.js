@@ -11,5 +11,10 @@ function PeopleController($scope) {
             phone: $scope.newPerson.phone,
             city: $scope.newPerson.city
         });
+        $scope.formVisibility = false;
+    }
+
+    $scope.ShowForm = function() {
+        $scope.formVisibility = true;
     }
 }
